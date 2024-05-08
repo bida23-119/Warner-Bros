@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WARNER BROS</title>
+    <link rel="stylesheet" href="Style 1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>  
+    <nav>
+        <a href="#" class="logo">
+            <img src="images/Logo .png"/>
+        </a>
+        <ul class="menu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="Movies.html">movies</a></li>
+            <li><a href="Tvshows.html">tv shows</a></li>
+            <li><a href="#">games&apps</a></li>
+            <li><a href="Collections.html">collections</a></li>
+            <li><a href="Feedback1.html">feedback</a></li>
+        </ul>
+  <form action="" class="search-box">
+      <input type="text" name="search" placeholder="Search Site" class="search-input" required/>
+      <button type="submit">
+          <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+      </button>
+   </form>
+  </nav>
+
+  <div class="slider-container">
+    <div class="slider">
+      <div class="slide">
+        <iframe width="1000" height="450" src="https://www.youtube-nocookie.com/embed/oSmEYtaORaA?si=tPWDOT4hWAanZllp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p style="color: #f4f6fa;">WATCH TRAILER</p>
+      </div>
+      <div class="slide">
+        <iframe width="1000" height="450" src="https://www.youtube-nocookie.com/embed/jnqu3pA-dYI?si=rKNoQ0TIhq3efVLv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <p style="color: #f4f6fa;">WATCH TRAILER AND EXPLORE MORE ON THE WORLD OF GAMING AND APPS</p>
+      </div>
+    </div>
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+  
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+  const prevBtn = document.querySelector(".prev");
+  const nextBtn = document.querySelector(".next");
+  const slider = document.querySelector(".slider");
+  
+  let slideIndex = 0;
+  
+  prevBtn.addEventListener("click", function() {
+    slideIndex = (slideIndex - 1 + slider.children.length) % slider.children.length;
+    updateSlider();
+  });
+  
+  nextBtn.addEventListener("click", function() {
+    slideIndex = (slideIndex + 1) % slider.children.length;
+    updateSlider();
+  });
+  
+  function updateSlider() {
+    slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+  }
+
+  
+  function goToPreviousSlide() {
+    slideIndex = (slideIndex - 1 + slider.children.length) % slider.children.length;
+    updateSlider();
+  }
+
+  
+  window.goToPreviousSlide = goToPreviousSlide;
+});
+
+</script>
+  <section id="latest">
+
+    <div class="latest-heading">
+        <h1>VIDEO GAMES & MOBILE APPS</h1>
+    </div>
+
+    <div class="post-container">
+        <div class="post-box">
+            <div class="post-img">
+                <img src="images/Batman;Arkkam Knight.jpg" alt=""/>
+            </div>
+            <div class="main-slider-text">
+                <span class="quality">FULL HD</span>
+                <div class="bottom-text">
+                    <div class="movie-name">
+                        <strong>BATMAN ARKHAM KNIGHT</strong>
+                    </div>
+                    <div class="category-rating">
+                        <div class="category">
+                            VIDEO GAME
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post-box">
+            <div class="post-img">
+                <img src="images/arcade (1).jpg" alt=""/>
+            </div>
+            <div class="main-slider-text">
+                <span class="quality">FULL HD</span>
+                <div class="bottom-text">
+                    <div class="movie-name">
+                        <strong style="color: black;">CN ARCADE</strong>
+                    </div>
+                    <div class="category-rating">
+                        <div class="category">
+                            MOBILE APPS
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post-box">
+            <div class="post-img">
+                <img src="images/injustice.jpg" alt=""/>
+            </div>
+            <div class="main-slider-text">
+                <span class="quality">FULL HD</span>
+                <div class="bottom-text">
+                    <div class="movie-name">
+                        
+                        <strong>INJUSTICE 2</strong>
+                    </div>
+                    <div class="category-rating">
+                        <div class="category">
+                            VIDEO GAME
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post-box">
+            <div class="post-img">
+                <img src="images/wizardind world .png" alt=""/>
+            </div>
+            <div class="main-slider-text">
+                <span class="quality">FULL HD</span>
+                <div class="bottom-text">
+                    <div class="movie-name">
+                        <strong>WIZARDING WORLD</strong>
+                    </div>
+                    <div class="category-rating">
+                        <div class="category">
+                            MOBILE APPS
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post-box">
+            <div class="post-img">
+                <img src="images/Disney cars.jpeg" alt=""/>
+            </div>
+            <div class="main-slider-text">
+                <span class="quality">FULL HD</span>
+                <div class="bottom-text">
+                    <div class="movie-name">
+                        <strong>DRIVEN TO WIN</strong>
+                    </div>
+                    <div class="category-rating">
+                        <div class="category">
+                            VIDEO GAME
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post-box">
+            <div class="post-img">
+                <img src="images/Commic.jpg" alt=""/>
+            </div>
+            <div class="main-slider-text">
+                <span class="quality">FULL HD</span>
+                <div class="bottom-text">
+                    <div class="movie-name">
+                        <strong>DC UNIVERSE INFINITE</strong>
+                    </div>
+                    <div class="category-rating">
+                        <div class="category">
+                            MOBILE APPS
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post-box">
+            <div class="post-img">
+                <img src="images/Need for Speed.jpeg" alt=""/>
+            </div>
+            <div class="main-slider-text">
+                <span class="quality">FULL HD</span>
+                <div class="bottom-text">
+                    <div class="movie-name">
+                        
+                        <strong>NEED FOR SPEED</strong>
+                    </div>
+                    <div class="category-rating">
+                        <div class="category">
+                            VIDEO GAME
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="post-box">
+            <div class="post-img">
+                <img src="images/studio tour.jpg" alt=""/>
+            </div>
+            <div class="main-slider-text">
+                <span class="quality">FULL HD</span>
+                <div class="bottom-text">
+                    <div class="movie-name">
+                        <strong>WB STUDIO TOUR</strong>
+                    </div>
+                    <div class="category-rating">
+                        <div class="category">
+                            MOBILE APPS
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+   
+    
+</section>
+
+   <footer>
+    <class="footer">
+      <nav>
+        <a href="#" class="logo">
+            <img src="images/Logo .png"/>
+        </a>
+        <small style="color: #fff;">TM & C @ Warner Bros. Entertainment inc. All rights reserved</small>
+
+        <ul class="social-links">
+            <a style="color: #306af0;" href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>
+                <a style="color: #306af0;" href="https://twitter.com/"><i class="fa-brands fa-twitter"></i>
+                <a style="color: #306af0;" href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i>             
+                <a style="color: #306af0;" href="https://bw.linkedin.com/"><i class="fa-brands fa-linkedin"></i>
+                <a style="color: #306af0;" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>
+                <a style="color: #306af0;" href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i>
+                <a style="color: #306af0;" href="https://mail.google.com/"><i class="fa-solid fa-envelope"></i>
+                </a>
+        </ul>
+    
+        <ul class="menu">
+            <li><a href="#">Company</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">careers</a></li>
+            <li><a href="#">PrivacyPolicy</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Aboutus</a></li>
+            <li><a href="#">TermsofUse</a></li>
+            
+        </ul>
+        
+    </div>
+   </footer> 
+    
+</body>
+</html>
